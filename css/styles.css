@@ -8,7 +8,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.14;
 }
@@ -158,4 +157,14 @@ body {
 .service-btn:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+
+.location:hover,
+.location:focus {
+  color: #2196f3;
+}
+
+.main-navigations:hover,
+.main-navigations:focus {
+  color: #2196f3;
 }
