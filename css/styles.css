@@ -16,9 +16,33 @@ body {
 .secend-heder,
 .section-team,
 .staff-name,
-.hero-title,
-.service-btn {
+.hero-title {
   color: #212121;
+}
+.services-btn-title {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.location,
+.main-heading {
+  color: #ffffff;
+}
+.description-hero,
+.position,
+.descriptions-servis,
+.mail-phone-link {
+  color: #757575;
+}
+.sectoin-footre,
+.section-main-hero {
+  background-color: #2f303a;
+}
+.main-navigations {
+  color: rgba(255, 255, 255, 0.6);
+}
+.active-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 /*========= heder ======== */
@@ -33,6 +57,7 @@ body {
 .color-logo {
   color: #000000;
 }
+.mail-phone-link,
 .navigations-link {
   font-weight: 500;
   font-size: 14px;
@@ -41,13 +66,8 @@ body {
 
 .navigations-link:hover,
 .navigations-link:focus {
-  color: #2196f3;
-}
-.mail-phone-link {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .mail-phone-link:hover,
@@ -55,6 +75,7 @@ body {
   color: #2196f3;
 }
 /* ====== HERO ====== */
+
 .main-heading {
   font-weight: 900;
   font-size: 44px;
@@ -62,25 +83,19 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff;*/
 }
 
-.services-btn {
+.services-btn-title {
   font-weight: 700;
-  font-size: 1.14;
+  font-size: 400;
   line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  /* color: #FFFFFF; */
 }
-.services-btn:hover,
-.services-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
+
 .description-header {
   font-weight: 700;
   font-size: 14px;
@@ -90,17 +105,9 @@ body {
 .descriptions-servis {
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
 }
-
+.section-team,
 .secend-heder {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.section-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -117,8 +124,7 @@ body {
 .position {
   font-size: 16px;
   line-height: 1.18;
-  /* text-align: center; */
-  color: #757575;
+  text-align: center;
 }
 
 .hero-title {
@@ -131,21 +137,15 @@ body {
 .description-hero {
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
 }
 /* ======= footer ======== */
-.location {
-  font-size: 14px;
-  line-height: 1.71;
-  /* color: #FFFFFF; */
-}
+.location,
 .main-navigations {
   font-size: 14px;
   line-height: 1.71;
-  /* color: rgba(255, 255, 255, 0.6); */
 }
 
-.service-btn {
+.services-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -153,8 +153,8 @@ body {
   cursor: pointer;
 }
 
-.service-btn:hover,
-.service-btn:focus {
+/* .services-btn:hover, */
+.services-btn:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
