@@ -4,34 +4,27 @@
   --accent-color: #212121;
   --link-color: #2196f3;
   --heading-color: #ffffff;
-  --logo-color: #000000; 
-  --main-link-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
   --paragraf-color: #757575;
-
+  --fon-color: #2f303a;
 }
 
-  .list {
-    list-style: none;
-  }
-
-  .link {
-    text-decoration: none;
-  }
-
-  body {
-    font-family: var(--maind-fond);
-    letter-spacing: 0.03em;
-    line-height: 1.14;
-    color: var(--accent-color);
-  }
-  /* .navigations-link,
-.description-header,
-.secend-heder,
-.section-team,
-.staff-name,
-.hero-title {
-color: var(--accent-color); */
+.list {
+  list-style: none;
 }
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--maind-fond);
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  color: var(--accent-color);
+}
+
 .services-btn-title {
   background-color: var(--link-color);
   color: var(--heading-color);
@@ -50,10 +43,10 @@ color: var(--accent-color); */
 }
 .sectoin-footre,
 .section-main-hero {
-  background-color: var(--link-color);
+  background-color: var(--fon-color);
 }
 .main-navigations {
-  color: var(--main-link-color);
+  color: var(--footer-link-color);
 }
 .active-button:focus {
   background-color: var(--link-color);
