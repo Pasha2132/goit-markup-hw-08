@@ -1,61 +1,76 @@
-.list {
-  list-style: none;
+:root {
+  --maind-fond: "Roboto", sans-serif;
+  --secondary-fond: "Raleway", sans-serif;
+  --accent-color: #212121;
+  --link-color: #2196f3;
+  --heading-color: #ffffff;
+  --logo-color: #000000; 
+  --main-link-color: rgba(255, 255, 255, 0.6);
+  --paragraf-color: #757575;
+
 }
 
-.link {
-  text-decoration: none;
-}
+  .list {
+    list-style: none;
+  }
 
-body {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
-}
-.navigations-link,
+  .link {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: var(--maind-fond);
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    color: var(--accent-color);
+  }
+  /* .navigations-link,
 .description-header,
 .secend-heder,
 .section-team,
 .staff-name,
 .hero-title {
-  color: #212121;
+color: var(--accent-color); */
 }
 .services-btn-title {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--link-color);
+  color: var(--heading-color);
 }
+
+.secend-color-logo,
 .location,
 .main-heading {
-  color: #ffffff;
+  color: var(--heading-color);
 }
 .description-hero,
 .position,
 .descriptions-servis,
 .mail-phone-link {
-  color: #757575;
+  color: var(--paragraf-color);
 }
 .sectoin-footre,
 .section-main-hero {
-  background-color: #2f303a;
+  background-color: var(--link-color);
 }
 .main-navigations {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--main-link-color);
 }
 .active-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--link-color);
+  color: var(--heading-color);
 }
 
 /*========= heder ======== */
 .logo-link {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-fond);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--link-color);
 }
 
 .color-logo {
-  color: #000000;
+  color: var(--logo-color);
 }
 .mail-phone-link,
 .navigations-link {
@@ -66,13 +81,30 @@ body {
 .navigations-link.curret,
 .navigations-link:hover,
 .navigations-link:focus {
-  color: #2196f3;
+  color: var(--link-color);
 }
 
 .mail-phone-link:hover,
 .mail-phone-link:focus {
-  color: #2196f3;
+  color: var(--link-color);
 }
+
+.services-btn:hover,
+.services-btn:focus {
+  background-color: var(--link-color);
+  color: var(--heading-color);
+}
+
+.location:hover,
+.location:focus {
+  color: var(--link-color);
+}
+
+.main-navigations:hover,
+.main-navigations:focus {
+  color: var(--link-color);
+}
+
 /* ====== HERO ====== */
 
 .main-heading {
@@ -149,20 +181,4 @@ body {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
-}
-
-/* .services-btn:hover, */
-.services-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.location:hover,
-.location:focus {
-  color: #2196f3;
-}
-
-.main-navigations:hover,
-.main-navigations:focus {
-  color: #2196f3;
 }
