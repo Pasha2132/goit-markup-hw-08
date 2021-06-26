@@ -1,3 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 :root {
   --maind-fond: "Roboto", sans-serif;
   --secondary-fond: "Raleway", sans-serif;
@@ -55,12 +77,36 @@ body {
 }
 
 /*========= heder ======== */
+.conteiner {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  border-radius: 1px, #ececec;
+}
+.heder-conteiner {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.navigations-link:not(:last-child) {
+  margin-right: 51px;
+}
+.mail-phone-linknot:not(:last-child) {
+  margin-right: 48px;
+}
+
 .logo-link {
   font-family: var(--secondary-fond);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--link-color);
+  margin-left: 145px;
+  margin-right: 90px;
 }
 
 .color-logo {
