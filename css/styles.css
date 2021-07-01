@@ -75,29 +75,39 @@ body {
   background-color: var(--link-color);
   color: var(--heading-color);
 }
-
-/*========= heder ======== */
 .conteiner {
-  display: flex;
   width: 1200px;
-  height: 120px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
-  border-radius: 1px, #ececec;
 }
 .heder-conteiner {
   display: flex;
   align-items: center;
+}
+.maim-conteiner {
+  border-radius: 1px #ececec;
+}
+.navigations {
+  display: flex;
+  align-items: center;
+}
+.heder-conteiner-first {
+  display: flex;
+  align-items: center;
   margin-right: auto;
 }
+.logo-link {
+  margin-right: 95px;
+}
+
 .navigations-link:not(:last-child) {
   margin-right: 51px;
 }
-.mail-phone-linknot:not(:last-child) {
-  margin-right: 48px;
+.mail-phone-link:not(:last-child) {
+  padding-right: 51px;
 }
+/*========= heder ======== */
 
 .logo-link {
   font-family: var(--secondary-fond);
@@ -105,8 +115,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--link-color);
-  margin-left: 145px;
-  margin-right: 90px;
 }
 
 .color-logo {
