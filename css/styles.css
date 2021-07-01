@@ -140,6 +140,93 @@ body {
 .job-conteiner:not(:last-child) {
   margin-right: 61px;
 }
+.secend-heder {
+  align-items: center;
+}
+.section-about-job {
+  width: 1600px;
+}
+.work-pichers {
+  width: 1200px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  margin: 60px 215px 60px 215px;
+}
+
+.imj-workplase:not(:last-child) {
+  margin-right: 30px;
+}
+.hidden-header {
+  color: #ffffff;
+}
+
+.team-box {
+  width: 1600px;
+  height: 650px;
+  background-color: #f5f4fa;
+}
+
+.section-team {
+  display: flex;
+  align-items: center;
+  margin: 0 668px 0 668px;
+  padding: 94px 0 0px 0;
+}
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.imj-team {
+  align-items: center;
+  margin-right: 30px;
+  width: 270px;
+  height: 60px
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+}
+
+.section-team-imj {
+  width: 1200px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  padding: 50px 215px 94px 215px;
+}
+
+
+.staff-names {
+  align-items: center;
+  margin-top: 30px ;
+}
+
+.position {
+  margin-top: 18px; 
+  margin-bottom: 30px;
+}
+
+/* =====footer===== */
+
+.sectoin-footre {
+  width: 1600px;
+  height: 253px;
+}
+
+.position-logo-link {
+  margin: 60px 1240px 20px 215px;
+}
+.footer-links {
+  width: 231px;
+  height: 81px;
+  margin: 111px 1154px 60px 215px;
+}
+
 /*========= heder ======== */
 
 .logo-link {
@@ -245,9 +332,13 @@ body {
   letter-spacing: 0.06em;
 }
 
-.description-hero {
+.staff-names {
   font-size: 16px;
   line-height: 1.87;
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--accent-color);
 }
 /* ======= footer ======== */
 .location,
