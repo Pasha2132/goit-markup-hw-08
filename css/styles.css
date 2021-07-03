@@ -31,7 +31,15 @@ img {
   --paragraf-color: #757575;
   --fon-color: #2f303a;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+  
 .list {
   list-style: none;
 }
@@ -159,7 +167,11 @@ body {
   margin-right: 30px;
 }
 .hidden-header {
-  color: #ffffff;
+ position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .team-box {
@@ -189,14 +201,14 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-}
+
 
 .section-team-imj {
   width: 1200px;
   display: flex;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
+  text-align: center;
   padding: 50px 215px 94px 215px;
 }
 
@@ -211,6 +223,7 @@ body {
   margin-bottom: 30px;
 }
 
+
 /* =====footer===== */
 
 .sectoin-footre {
@@ -219,12 +232,57 @@ body {
 }
 
 .position-logo-link {
-  margin: 60px 1240px 20px 215px;
+  margin: 60px 1240px 161px 215px;
 }
-.footer-links {
-  width: 231px;
-  height: 81px;
-  margin: 111px 1154px 60px 215px;
+ .footer-links {
+  padding: 111px 1154px 60px 215px; 
+
+} 
+
+
+
+
+
+/* =========Portfolio====== */
+
+ .section-portfolio-imj{
+   width: 1200px; 
+  align-content: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+} 
+
+.btn-portfolio{
+  display: flex;
+  
+  margin: 174px 294px  34px 495px;
+}
+.img-portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 -30px -30px 0;
+}
+.btn:not(:last-child){
+  margin-right: 10px;
+}
+
+.servicrs-div{
+  width: 1600px;
+  text-align: center;
+}
+.portfolio-workplace  {
+  margin: 0 30px 30px 0;
+  
+  width: 370px;
+height: 404px;
+left: 615px;
+top: 696px;
+
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+
 }
 
 /*========= heder ======== */
