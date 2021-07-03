@@ -127,9 +127,7 @@ img {
   color: var(--blacktext-color);
 }
 /* Site-Nav */
-.site-nav {
-  margin-right: 93px;
-}
+
 .nav-list {
   display: flex;
   margin-left: 93px;
