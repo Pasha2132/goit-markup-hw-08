@@ -127,12 +127,15 @@ img {
   color: var(--blacktext-color);
 }
 /* Site-Nav */
+.site-nav {
+  margin-right: 93px;
+}
 .nav-list {
   display: flex;
   margin-left: 93px;
 }
-.nav-list > .item:not(:first-child) {
-  margin-left: 50px;
+.nav-list > .item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-list .link {
   display: block;
@@ -204,6 +207,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   text-align: center;
+  border: none;
 }
 /* Advantages */
 .advantages-title {
