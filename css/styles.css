@@ -141,11 +141,19 @@ img {
   padding-bottom: 32px;
 }
 
+.heder-icon{
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .nav-list .link:hover,
 .nav-list .link:focus {
   color: var(--accent-color);
 }
 /* Contacts */
+
+
+
 .header-contacts-list {
   display: flex;
   margin-left: auto;
@@ -164,13 +172,22 @@ img {
 .header-contacts-list .link:focus {
   color: var(--accent-color);
 }
+.heder-contacts-iteam{
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
 /* ===============MAIN============== */
 
 /* Hero */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
+  background-image: linear-gradient(
+     rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4) ),
+   url("../images/Img.jpg");
   background-color: var(--footer-bckg-color);
   text-align: center;
   margin-left: auto;
@@ -179,7 +196,7 @@ img {
 .hero-title {
   margin: 0;
   margin-bottom: 30px;
-
+  
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
