@@ -521,7 +521,7 @@ img {
   text-align: center;
   cursor: pointer;
 }
-..filter-button:hover,
+.filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--whitetext-color);
