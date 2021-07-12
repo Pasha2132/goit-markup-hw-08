@@ -398,6 +398,11 @@ img {
   background-color: var(--footer-bckg-color);
   font-style: inherit;
 }
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -426,8 +431,7 @@ img {
 .footer-contacts-list .link:focus {
   color: var(--accent-color);
 }
-/* Ссылка на карту визуально отличается от остального списка ссылок,
- поэтому font-style: normal; и text-decoration: none; -принудительно */
+
 .map-link {
   color: var(--whitetext-color);
   text-decoration: none;
@@ -435,8 +439,55 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.join-us-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
 
-/* EXHIBITION */
+.join-us-title {
+  margin-bottom: 20px;
+  color: var(--whitetext-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-us-list {
+  display: flex;
+}
+
+.join-us-list .item {
+  width: 44px;
+  height: 44px;
+}
+
+.join-us-list .item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.join-us-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--whitetext-color);
+  background-color: var(--footer-icon-bcg-color);
+}
+
+.join-us-list .link:hover,
+.join-us-list .link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .exhibition-list-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -461,7 +512,6 @@ img {
   padding-right: 22px;
   padding-left: 22px;
   border: 1px solid transparent;
-
   font-family: inherit;
   background-color: var(--secondary-bckg-color);
   color: var(--title-text-color);
@@ -471,10 +521,12 @@ img {
   text-align: center;
   cursor: pointer;
 }
-.filter-button:hover,
+..filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--whitetext-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /* EXHIBITION-LIST */
 .exhibition-list {
@@ -488,12 +540,23 @@ img {
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+
+.exhibition-list .link {
+  display: block;
+}
+.exhibition-list .link:hover,
+.exhibition-list .link:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .subimage-box {
   border-left: 1px solid var(--subimage-box-color);
   border-right: 1px solid var(--subimage-box-color);
   border-bottom: 1px solid var(--subimage-box-color);
   padding: 20px 24px;
 }
+
 .exhibition-list-title {
   margin-bottom: 4px;
 }
