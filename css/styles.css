@@ -120,7 +120,7 @@ img {
 }
 /* =========HEADER========= */
 .page-header {
-  border-bottom: 1px solid var(--header-border-color);
+  /* border-bottom: 1px solid var(--header-border-color); */
 
   font-weight: 500;
   font-size: 14px;
