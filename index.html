@@ -63,7 +63,7 @@
       <!--Герой-->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-        <button type="button" class="modal-open-btn" data-modal-open>
+        <button type="button" class="modal-open-button" data-modal-open>
           Заказать услугу
         </button>
       </section>
@@ -458,12 +458,111 @@
             </li>
           </ul>
         </div>
+        <div class="submit-block">
+          <div class="submit-block__title">
+            <h3 class="join-us-title">Подпишитесь на рассылку</h3>
+          </div>
+          <form class="submit-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="submit-form__input"
+            />
+            <button type="submit" class="footer-submit-button">
+              Подписаться<svg
+                class="footer-submit-button-icon"
+                style="width: 24px; height: 24px"
+              >
+                <use href="./images/icons.svg#icon-paperplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- ==========Modal================= -->
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="close-icon">
+        <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form name="modal-feedback-form" class="modal-form">
+          <label for="name" class="modal-form-label">Имя</label>
+          <div class="field-wrapper">
+            <input
+              type="text"
+              name="user-name"
+              id="name"
+              placeholder=" "
+              required
+              class="modal-form-input"
+            />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/icons.svg#icon-name-input"></use>
+            </svg>
+          </div>
+
+          <label for="user-phone-number" class="modal-form-label"
+            >Телефон</label
+          >
+          <div class="field-wrapper">
+            <input
+              type="tel"
+              name="tel"
+              id="user-phone-number"
+              placeholder=" "
+              required
+              class="modal-form-input"
+            />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/icons.svg#icon-phone-input"></use>
+            </svg>
+          </div>
+
+          <label for="user-email" class="modal-form-label">Почта</label>
+          <div class="field-wrapper">
+            <input
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder=" "
+              class="modal-form-input"
+            />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/icons.svg#icon-email-input"></use>
+            </svg>
+          </div>
+
+          <label for="user-comment" class="modal-form-label">Комментарий</label>
+          <div class="field-wrapper field-wrapper--textarea">
+            <textarea
+              name="commentary"
+              id="user-comment"
+              placeholder="Введите текст"
+              class="modal-form-textarea"
+            ></textarea>
+          </div>
+          <div class="licence-block">
+            <label for="agreement" class="custom-checkbox__label"
+              ><input
+                type="checkbox"
+                name="user-agreement"
+                id="agreement"
+                value="i-agree"
+                class="modal-form-check-box visually-hidden"
+              /><svg
+                class="custom-checkbox__icon"
+                style="width: 16px; height: 15px"
+              >
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="" class="license-link">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-submit-button">Отправить</button>
+        </form>
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="close-icon" style="width: 18px; height: 18px">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
