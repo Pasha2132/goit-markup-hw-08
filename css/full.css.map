@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/full.scss"
+    ],
+    "names": [],
+    "file": "full.css"
+}
