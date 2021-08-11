@@ -61,12 +61,12 @@
     </header> -->
     <main>
       <!--Герой-->
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
         <button type="button" class="modal-open-button" data-modal-open>
           Заказать услугу
         </button>
-      </section> -->
+      </section>
       <!--Список преимуществ-->
 
       <section class="advantages-section">
@@ -89,7 +89,7 @@
               </p>
             </li>
             <li class="item">
-              <div class="thumb">
+              <div class="advantages-list__thumb">
                 <svg class="advantages-icon">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -128,17 +128,28 @@
         </div>
       </section>
       <!--Список услуг-->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="features-list unmarked">
             <li class="item">
-              <img
-                src="./images/box1.jpg"
-                alt="Человек за рабочим столом"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="/images/descktop/box1.jpg x1, ./images/descktop/box1@x2.jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="/images/descktop/box1.webp x1,
+                ./images/descktop/box1@x2.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/deckstope/box1.jpg"
+                  alt="Человек за рабочим столом"
+                />
+              </picture>
+
               <div class="features-overlay">
                 <h3 class="features-overlay__label">Десктопные приложения</h3>
               </div>
@@ -167,7 +178,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Команда-->
       <!-- <section class="team section">
         <div class="container">
@@ -399,7 +410,7 @@
       </section> -->
     </main>
     <!--footer-->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="logo-adress-block">
           <a href="./index.html" class="footer-logo link"
@@ -482,7 +493,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- ==========Modal================= -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
@@ -569,7 +580,7 @@
           </svg>
         </button>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
