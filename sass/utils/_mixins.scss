@@ -4,9 +4,26 @@
   align-items: $secondary-axis;
 }
 
-@mixin wrappedFlex($type: flex, $line-wrapping: wrap) {
+@mixin columnedFlex(
+  $type: flex,
+  $direction: column,
+  $secondary-axis: flex-start
+) {
+  display: $type;
+  flex-direction: $direction;
+  align-items: $secondary-axis;
+}
+
+@mixin flexedGrid($type: flex, $line-wrapping: wrap) {
   display: $type;
   flex-wrap: $line-wrapping;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+@mixin fontSource($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
 }
